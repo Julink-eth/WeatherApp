@@ -158,6 +158,7 @@ app.controller('weatherCtrl', function ($scope, $http) {
                 break;
         }
         $scope.$apply();
+        $scope.loading = false;
     };
 
     //Retrieves the user's location and then call the function in charge of calling the Web Method GetForecast
