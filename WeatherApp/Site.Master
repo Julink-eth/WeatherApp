@@ -3,35 +3,32 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Weather App</title>
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%: Page.Title %> - Weather App</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="Content/bootstrap.css">
-    <link rel="stylesheet" href="Content/Site.css">
+        <link rel="stylesheet" href="Content/bootstrap.css">
+        <link rel="stylesheet" href="Content/Site.css">
 
-    <script src="Scripts/Libs/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="Scripts/Libs/angular.min.js" type="text/javascript"></script>
-    <script src="Scripts/default.js" type="text/javascript"></script>
+        <script src="Scripts/Libs/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="Scripts/Libs/angular.min.js" type="text/javascript"></script>
+        <script src="Scripts/default.js" type="text/javascript"></script>
 
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" runat="server" href="~/">Weather Application</a>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" runat="server" href="~/">Weather Application</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-        <hr />
-        <footer>
-        </footer>
-    </div>
-</body>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </body>
 </html>
